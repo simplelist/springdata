@@ -8,8 +8,13 @@
   <packaging>jar</packaging>
 
   <name>springdata-learn</name>
-  <url>http://maven.apache.org</url>
-
+    <repositories>
+        <repository>
+            <id>alimaven</id>
+            <name>aliyun maven</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+    </repositories>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>

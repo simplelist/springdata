@@ -1,14 +1,12 @@
 package com.kun.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**雇员:先开发实体类-->>数据库表
  * Created by kun on 2017/4/21.
  */
-@Entity(name = "employee")
+@Entity
+@Table(name = "test_emplyee")
 public class Employee {
     private Integer id;
     private String name;
