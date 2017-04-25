@@ -22,15 +22,13 @@ import java.util.List;
  */
 public class EmployeeServiceTest {
 
-
-
     private ApplicationContext ctx=null;
     private EmployeeService employeeService=null;
     private EmployeeRepository employeeRepository=null;
 
     @Before
     public void before() {
-        ctx=new ClassPathXmlApplicationContext("beans-new.xml");
+        ctx=new ClassPathXmlApplicationContext("applicationContext-jpa.xml");
         employeeService=ctx.getBean(EmployeeService.class);
         employeeRepository=ctx.getBean(EmployeeRepository.class);
     }
@@ -52,6 +50,7 @@ public class EmployeeServiceTest {
         employeeService.save(employees);
     }
 
+    @Test
     public void testPage(){
         Sort sort=new Sort(Sort.Direction.DESC,"id");
         Specification<Employee> specification=new Specification<Employee>() {

@@ -22,7 +22,7 @@ public class EmployeeRepositoryTest {
 
     @Before
     public void before() {
-        ctx=new ClassPathXmlApplicationContext("beans-new.xml");
+        ctx=new ClassPathXmlApplicationContext("applicationContext-jpa.xml");
         employeeRepository=ctx.getBean(EmployeeRepository.class);
     }
 
