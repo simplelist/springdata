@@ -61,11 +61,9 @@ public class EmployeeRepositoryTest {
         }
     }
 
-    @Test
     public void testCreateTable() {
 
     }
-    @Test
     public void testSave() {
         List<Employee> employees=new LinkedList<>();
         employees.add(new Employee("张郃",25));
@@ -75,7 +73,6 @@ public class EmployeeRepositoryTest {
     }
 
 
-    @Test
     public void testUpdate(){
         employeeRepository.updateAgeById(1,60);
     }

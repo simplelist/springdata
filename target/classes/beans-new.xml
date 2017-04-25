@@ -15,7 +15,7 @@
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
         <property name="username" value="kun"/>
         <property name="password" value="654321"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/spring_data"/>
+        <property name="url" value="jdbc:mysql://192.168.1.144:3306/spring_data"/>
     </bean>
 
     <!--2.配置EntityManagerFactory-->

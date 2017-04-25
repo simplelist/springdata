@@ -39,11 +39,9 @@ public class EmployeeServiceTest {
         ctx=null;
     }
 
-    @Test
     public void testUpdate(){
         employeeService.updateAgeById(1,61);
     }
-    @Test
     public void testSave(){
         List<Employee> employees=new LinkedList<>();
         Employee employee=null;
@@ -54,7 +52,6 @@ public class EmployeeServiceTest {
         employeeService.save(employees);
     }
 
-    @Test
     public void testPage(){
         Sort sort=new Sort(Sort.Direction.DESC,"id");
         Specification<Employee> specification=new Specification<Employee>() {
